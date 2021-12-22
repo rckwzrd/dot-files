@@ -1,0 +1,15 @@
+# basic service template for running gunicorn with systemd
+
+[Unit]
+Description=Gunicorn instance to server weather
+After=network.target
+
+[Service]
+User=mlr
+Group=www-data
+WorkingDirectory=/home/mlr/weather/
+Environment="PATH=/home/mlr/weather/btl/bin"
+ExecStart=/home/mlr/weather/btl/bin/gunicorn app:app
+
+[Install]
+WantedBy=multi-user.target
