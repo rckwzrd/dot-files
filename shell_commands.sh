@@ -7,3 +7,7 @@ sudo chmod u+x script.sh
 curl -O https://place.com/root_name
 
 # zip a directory
+
+# display current date
+date
+timedatectl
