@@ -6,11 +6,11 @@ sudo chmod u+x script.sh
 # download file from URL, save as root name
 curl -O https://place.com/root_name
 
-# zip a directory
-
 # display current date
 date
 timedatectl
+
+# note on compression: .zip != .gzip != .tar
 
 # compress all files in a directory, keep files
 gzip -kr dir/
@@ -26,3 +26,9 @@ tar -zxvf archive.tar.gz
 
 # view content of tar archive
 tar -tf archive.tar.gz
+
+# zip directory
+zip -r project.zip project
+
+# unzip directory
+unzip project.zip
