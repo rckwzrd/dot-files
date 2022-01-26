@@ -32,3 +32,6 @@ zip -r project.zip project
 
 # unzip directory
 unzip project.zip
+
+# knit rmd to html and open in browser
+Rscript -e "rmarkdown::render('Q1/HWQ1.Rmd')" && xdg-open Q1/HWQ1.html
