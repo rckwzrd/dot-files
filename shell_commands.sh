@@ -35,3 +35,6 @@ unzip project.zip
 
 # knit rmd to html and open in browser
 Rscript -e "rmarkdown::render('Q1/HWQ1.Rmd')" && xdg-open Q1/HWQ1.html
+
+# copy file into list of dirs with echo, xargs, and cp
+echo ./dir1 ./dir2 ./dir3 | xargs -n 1 cp file.py
