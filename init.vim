@@ -36,6 +36,8 @@ set number
 set relativenumber
 set colorcolumn=80
 set signcolumn=yes
+# set linebreak
+# set wrap
 
 " motion
 set scrolloff=6
