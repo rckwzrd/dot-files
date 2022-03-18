@@ -44,3 +44,7 @@ echo ./dir1 ./dir2 ./dir3 | xargs -n 1 cp file.py
 git clean -f -d
 # remove files
 git clean -f
+
+# reset local branch and pull remote changes
+git reset --hard
+git pull
