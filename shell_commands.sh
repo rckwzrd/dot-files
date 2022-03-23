@@ -48,3 +48,6 @@ git clean -f
 # reset local branch and pull remote changes
 git reset --hard
 git pull
+
+# convert jupyter notebook to pdf
+jupyter-nbconvert --to pdfviahtml sec7/prac7.ipynb
