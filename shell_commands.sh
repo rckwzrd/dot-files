@@ -51,3 +51,8 @@ git pull
 
 # convert jupyter notebook to pdf
 jupyter-nbconvert --to pdfviahtml sec7/prac7.ipynb
+
+# get to msds faster
+alias 383='cd Desktop/msds/DSC_383'
+alias 385='cd Desktop/msds/DSC_385'
+# source .bashrc
