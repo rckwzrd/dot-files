@@ -56,3 +56,6 @@ jupyter-nbconvert --to pdfviahtml sec7/prac7.ipynb
 alias 383='cd Desktop/msds/DSC_383'
 alias 385='cd Desktop/msds/DSC_385'
 # source .bashrc
+
+# find a file
+find / -name "_keydefaults.lua"
