@@ -59,3 +59,12 @@ alias 385='cd Desktop/msds/DSC_385'
 
 # find a file
 find / -name "_keydefaults.lua"
+
+# pandoc convert docx source to markdown
+pandoc -s doc.docx -t markdown -o doc.md
+
+# pandoc convert docx to markdown, if images save to dir
+pandoc doc.docx -o doc.md --extract-media=./images/
+
+
+
