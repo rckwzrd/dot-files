@@ -66,5 +66,7 @@ pandoc -s doc.docx -t markdown -o doc.md
 # pandoc convert docx to markdown, if images save to dir
 pandoc doc.docx -o doc.md --extract-media=./images/
 
+# parse health data xml to csv with python and jq
+python3 parse.py data/export.xml | jq -r '[.endDate, .type, .unit, .value] | @csv' > data/heart_rate.csv
 
 
