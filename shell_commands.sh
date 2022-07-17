@@ -49,6 +49,10 @@ git clean -f
 git reset --hard
 git pull
 
+# undo last commit, fix stuff, and commit
+git reset HEAD~
+git commit -c ORIG_HEAD
+
 # convert jupyter notebook to pdf
 jupyter-nbconvert --to pdfviahtml sec7/prac7.ipynb
 
