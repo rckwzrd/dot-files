@@ -61,6 +61,13 @@ alias 383='cd Desktop/msds/DSC_383'
 alias 385='cd Desktop/msds/DSC_385'
 # source .bashrc
 
+# get around faster with .bashrc
+alias cl="clear"
+alias dk="cd /home/mlr/Desktop"
+alias ve="cd /home/mlr/venvs"
+alias gt="cd /home/mlr/git"
+# source .bashrc
+
 # find a file
 find / -name "_keydefaults.lua"
 
