@@ -60,6 +60,9 @@ colorscheme gruvbox
 set mouse=a
 set noshowmode "remove visual, cmd, normal flag on last line
 
+" edit init.vim 
+" e: $MYVIMRC
+
 " help and options
 " :h or :help <thing>
 " :options
@@ -70,3 +73,4 @@ set noshowmode "remove visual, cmd, normal flag on last line
 " plugins
 " :PlugInstall
 " :PlugClean
+" https://github.com/junegunn/vim-plug
