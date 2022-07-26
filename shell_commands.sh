@@ -30,8 +30,11 @@ tar -tf archive.tar.gz
 # zip directory
 zip -r project.zip project
 
-# unzip directory
+# unzip in current directory
 unzip project.zip
+
+# unzip to a directoy
+unzip project.zip -d /path/to/dir
 
 # knit rmd to html and open in browser
 Rscript -e "rmarkdown::render('Q1/HWQ1.Rmd')" && xdg-open Q1/HWQ1.html
