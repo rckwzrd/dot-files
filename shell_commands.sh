@@ -86,3 +86,5 @@ python3 parse.py data/export.xml | jq -r '[.endDate, .type, .unit, .value] | @cs
 # open file explorer with path as variable
 xdg-open $(bundle info --path minima)
 
+# upgrade python enivornment with updated dependancies
+pip install -r requirements.txt --upgrade
