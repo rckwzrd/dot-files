@@ -4,7 +4,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'gruvbox-community/gruvbox'
 Plug 'itchyny/lightline.vim'
-Plug 'preservim/nerdtree'
+Plug 'preservim/nerdtree', {'on': 'NERDTreeToggle'}
 call plug#end()
 
 " syntax
@@ -31,13 +31,14 @@ set nohlsearch
 " gui
 set nowrap
 set showmatch
-set cursorline
+
+" set cursorline
 set number
 set relativenumber
 set colorcolumn=80
 set signcolumn=yes
-# set linebreak
-# set wrap
+" set linebreak
+" set wrap
 
 " motion
 set scrolloff=6
@@ -56,12 +57,14 @@ let g:lightline={'colorscheme':'gruvbox'}
 " colors 
 colorscheme gruvbox
 
-" testing
-set mouse=a
-set noshowmode "remove visual, cmd, normal flag on last line
+" non recursive remap
+nnoremap <silent> <Space> :NERDTreeToggle<CR>
 
-" edit init.vim 
-" e: $MYVIMRC
+" enable mousing
+set mouse=a
+
+" remove visual, cmd, and normal flag
+set noshowmode
 
 " help and options
 " :h or :help <thing>
