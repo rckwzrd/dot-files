@@ -4,6 +4,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'gruvbox-community/gruvbox'
 Plug 'itchyny/lightline.vim'
+Plug 'preservim/tagbar'
 Plug 'preservim/nerdtree', {'on': 'NERDTreeToggle'}
 call plug#end()
 
@@ -57,8 +58,15 @@ let g:lightline={'colorscheme':'gruvbox'}
 " colors 
 colorscheme gruvbox
 
+" set leader
+let mapleader=";"
+
 " non recursive remap
-nnoremap <silent> <Space> :NERDTreeToggle<CR>
+nnoremap <silent> <leader>tr :NERDTreeToggle<CR>
+nnoremap <silent> <leader>tb :TagbarToggle<CR>
+
+" tagbar autofocus
+let g:tagbar_autofocus = 1
 
 " enable mousing
 set mouse=a
