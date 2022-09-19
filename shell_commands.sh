@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# make script executable
+# make script executable for user
 sudo chmod u+x script.sh
+
+# remove executable from user and group
+sudo chmod a-x script.sh
 
 # download file from URL, save as root name
 curl -O https://place.com/root_name
