@@ -59,6 +59,12 @@ git pull
 git reset HEAD~
 git commit -c ORIG_HEAD
 
+# change local branch to match remote branch
+git branch -m master main
+git fetch origin
+git branch -u origin/main main
+git remote set-head origin -a
+
 # convert jupyter notebook to pdf
 jupyter-nbconvert --to pdfviahtml sec7/prac7.ipynb
 
