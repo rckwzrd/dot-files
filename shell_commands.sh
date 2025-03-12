@@ -1,5 +1,17 @@
 #!/bin/bash
 
+# update system
+sudo apt update
+sudo apt upgrade - y
+sudo apt autoremove -y  # remove uneeded dependancies
+sudo apt clean          # clear apt cache
+
+# uninstall thing
+sudo apt purge thing    # remove thing and configs
+sudo apt autoremove -y  # remove uneeded dependancies
+sudo apt clean          # clear apt cache
+
+
 # make script executable for user
 sudo chmod u+x script.sh
 
